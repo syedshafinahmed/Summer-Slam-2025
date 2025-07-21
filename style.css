@@ -79,3 +79,69 @@
     margin-top: 50px;
     /* animation: header-animation 1s forwards alternate; */
 }
+
+.matchesleft button{
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.matchesleft button:nth-of-type(3){
+    background-color: #DD0000;
+    color: white;
+}
+.matchesleft{
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+    border-radius: 20px;
+    width: 20%;
+    height: fit-content;
+}
+.matches{
+    display: flex;
+    margin-top: 150px;
+    gap: 30px;
+}
+.matchbox{
+    display: flex;
+    flex-direction: column;
+}
+
+.matchbox img{
+    width: 320px;
+    height: 160px;
+    border-radius: 10px 10px 0 0;
+}
+.matchbox button{
+    width: 100px;
+    height: 32px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+.matchbox p{
+    opacity: 0.8;
+    font-size: 12px;
+}
+.matchbox-content{
+    padding: 20px 0 20px 20px;
+}
+.matchesright{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.matchbox-content h4{
+    font-size: 12px;
+}
+.matchbox-content h5{
+    font-size: 10px;
+}
