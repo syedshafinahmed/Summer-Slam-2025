@@ -94,6 +94,10 @@
     background-color: #DD0000;
     color: white;
 }
+.matchesleft button:nth-of-type(3):hover{
+    background-color: white;
+    color: #161616;
+}
 .matchesleft{
     background-color: #161616;
     display: flex;
@@ -126,6 +130,11 @@
     border-radius: 5px;
     border: 1px solid black;
     margin-bottom: 20px;
+}
+.matchbox button:hover, .matchesleft button:hover{
+    background-color: #DD0000;
+    border: none;
+    color: white;
 }
 .matchbox p{
     opacity: 0.8;
