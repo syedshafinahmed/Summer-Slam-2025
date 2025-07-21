@@ -1,61 +1,73 @@
 .poppins-regular {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
-@keyframes header-animation{
-    0%{
+
+@keyframes header-animation {
+    0% {
         opacity: 0;
     }
-    50%{
+
+    50% {
         opacity: 0.5;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
-@keyframes header-img-animation{
-    0%{
+
+@keyframes header-img-animation {
+    0% {
         transform: translateX(-20px);
         opacity: 0;
     }
-    25%{
+
+    25% {
         transform: translateX(-10px);
         opacity: 0.25;
     }
-    50%{
+
+    50% {
         transform: translateX(-5px);
         opacity: 0.5;
     }
-    100%{
+
+    100% {
         transform: translateX(0px);
         opacity: 1;
     }
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.headerleft{
-    /* padding-left: 30px; */
+
+.headerleft {
     padding: 60px 0 60px 80px;
 }
-.container{
+
+.container {
     max-width: 1280px;
     margin: auto;
 }
-.headerleft h3{
+
+.headerleft h3 {
     font-size: 40px;
     font-weight: bold;
     color: white;
 }
-.headerleft p{
+
+.headerleft p {
     margin-bottom: 30px;
     margin-top: 20px;
     color: white;
 }
-.headerleft button{
+
+.headerleft button {
     width: 187px;
     height: 56px;
     background-color: #DD0000;
@@ -64,23 +76,24 @@
     border-radius: 5px;
     font-size: 20px;
 }
-.headerright img{
+
+.headerright img {
     width: 750px;
     height: 530px;
     display: block;
     animation: header-img-animation 0.5s infinite ease-in-out;
 }
-.header{
+
+.header {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #161616;
     border-radius: 10px;
     margin-top: 50px;
-    /* animation: header-animation 1s forwards alternate; */
 }
 
-.matchesleft button{
+.matchesleft button {
     width: 200px;
     height: 50px;
     background-color: white;
@@ -90,15 +103,18 @@
     font-size: 15px;
     font-weight: 500;
 }
-.matchesleft button:nth-of-type(3){
+
+.matchesleft button:nth-of-type(3) {
     background-color: #DD0000;
     color: white;
 }
-.matchesleft button:nth-of-type(3):hover{
+
+.matchesleft button:nth-of-type(3):hover {
     background-color: white;
     color: #161616;
 }
-.matchesleft{
+
+.matchesleft {
     background-color: #161616;
     display: flex;
     flex-direction: column;
@@ -108,22 +124,25 @@
     width: 20%;
     height: fit-content;
 }
-.matches{
+
+.matches {
     display: flex;
     margin-top: 150px;
     gap: 30px;
 }
-.matchbox{
+
+.matchbox {
     display: flex;
     flex-direction: column;
 }
 
-.matchbox img{
+.matchbox img {
     width: 320px;
     height: 160px;
     border-radius: 10px 10px 0 0;
 }
-.matchbox button{
+
+.matchbox button {
     width: 100px;
     height: 32px;
     font-weight: 500;
@@ -131,26 +150,94 @@
     border: 1px solid black;
     margin-bottom: 20px;
 }
-.matchbox button:hover, .matchesleft button:hover{
+
+.matchbox button:hover,
+.matchesleft button:hover {
     background-color: #DD0000;
     border: none;
     color: white;
 }
-.matchbox p{
+
+.matchbox p {
     opacity: 0.8;
     font-size: 12px;
 }
-.matchbox-content{
+
+.matchbox-content {
     padding: 20px 0 20px 20px;
 }
-.matchesright{
+
+.matchesright {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
-.matchbox-content h4{
+
+.matchbox-content h4 {
     font-size: 12px;
 }
-.matchbox-content h5{
+
+.matchbox-content h5 {
     font-size: 10px;
+}
+
+
+@media screen and (max-width:992px) {
+    .matchesright {
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+
+    .matches {
+        flex-direction: column;
+        margin-top: 30px;
+        padding: 20px;
+    }
+
+    .matchesleft {
+        width: 100%;
+        flex-direction: row;
+        padding: 10px 20px;
+        justify-content: space-between;
+    }
+
+    .headerleft h3 {
+        font-size: 16px;
+    }
+
+    .headerright img {
+        width: 334px;
+        height: 236px;
+    }
+
+    .headerleft p {
+        font-size: 8px;
+    }
+
+    .headerleft button {
+        width: 100px;
+        height: 32px;
+        font-size: 12px;
+    }
+
+    .header {
+        margin: 20px;
+    }
+
+    .headerleft {
+        padding: 20px 0 30px 30px;
+    }
+
+    .matchbox img {
+        width: 300px;
+        height: 150px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .matchesleft button {
+        width: 150px;
+        height: 25px;
+        font-size: 8px;
+        border-radius: 40px;
+    }
 }
