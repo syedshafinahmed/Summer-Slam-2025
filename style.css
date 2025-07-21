@@ -249,6 +249,9 @@
     .header p{
         font-size: 10px;
     }
+    .headerleft h3{
+        text-align: center;
+    }
 
     .matches {
         flex-direction: column;
@@ -270,8 +273,8 @@
     }
 
     .matchbox img {
-        width: 440px;
-        height: 220px;
+        width: 300px;
+        height: 150px;
         border-radius: 10px 10px 0 0;
     }
     .headerleft{
