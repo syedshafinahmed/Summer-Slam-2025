@@ -241,3 +241,47 @@
         border-radius: 40px;
     }
 }
+
+@media screen and (max-width:576px) {
+    .header {
+        flex-direction: column;
+    }
+    .header p{
+        font-size: 10px;
+    }
+
+    .matches {
+        flex-direction: column;
+    }
+    .matchesleft{
+        flex-direction: column;
+        background-color: transparent;
+        justify-content: center;
+        align-items: center;
+    }
+    .matchesleft button{
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .matchesright {
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+
+    .matchbox img {
+        width: 440px;
+        height: 220px;
+        border-radius: 10px 10px 0 0;
+    }
+    .headerleft{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 35px;
+    }
+    .headerleft p{
+        text-align: center;
+    }
+}
