@@ -287,4 +287,7 @@
     .headerleft p{
         text-align: center;
     }
+    .matchbox-content {
+        padding: 20px 0;
+}
 }
