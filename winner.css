@@ -1,6 +1,9 @@
 .winner-page img{
     width: 384px;
     height: 480px;
+    /* box-shadow: -15px 0 12px  rgba(34, 34, 134, 0.5), 15px 0 12px rgba(170, 13, 13, 0.5); */
+    box-shadow: 0px 0px 40px rgba(255, 0, 0, 0.9);
+    border-radius: 12px;
 }
 .winner-page img:nth-of-type(1), .winner-page img:nth-of-type(2), .winner-page img:nth-of-type(3){
     margin-top: 50px;
@@ -14,3 +17,4 @@
     gap:  50px 50px;
     place-items: center;
 }
+
