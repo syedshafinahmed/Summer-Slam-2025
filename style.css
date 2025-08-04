@@ -103,6 +103,14 @@
     font-size: 15px;
     font-weight: 500;
 }
+.winner a:hover {
+    color: white;
+    font-weight: 900;
+}
+.winner a{
+    color: #161616;
+    text-decoration: none;
+}
 
 .matchesleft button:nth-of-type(3) {
     background-color: #DD0000;
@@ -112,6 +120,7 @@
 .matchesleft button:nth-of-type(3):hover {
     background-color: white;
     color: #161616;
+    font-weight: 900;
 }
 
 .matchesleft {
@@ -156,6 +165,7 @@
     background-color: #DD0000;
     border: none;
     color: white;
+    font-weight: 900;
 }
 
 .matchbox p {

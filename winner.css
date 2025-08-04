@@ -1,0 +1,16 @@
+.winner-page img{
+    width: 384px;
+    height: 480px;
+}
+.winner-page img:nth-of-type(1), .winner-page img:nth-of-type(2), .winner-page img:nth-of-type(3){
+    margin-top: 50px;
+}
+.winner-page img:nth-of-type(10), .winner-page img:nth-of-type(11){
+    margin-bottom: 50px;
+}
+.winner-page{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:  50px 50px;
+    place-items: center;
+}
