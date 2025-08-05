@@ -1,3 +1,4 @@
+
 .winner-page img{
     width: 384px;
     height: 480px;
@@ -5,12 +6,12 @@
     box-shadow: 0px 0px 40px rgba(255, 0, 0, 0.9);
     border-radius: 12px;
 }
-.winner-page img:nth-of-type(1), .winner-page img:nth-of-type(2), .winner-page img:nth-of-type(3){
+/* .winner-page img:nth-of-type(1), .winner-page img:nth-of-type(2), .winner-page img:nth-of-type(3){
     margin-top: 50px;
 }
 .winner-page img:nth-of-type(10), .winner-page img:nth-of-type(11){
     margin-bottom: 50px;
-}
+} */
 .winner-page{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -20,13 +21,11 @@
  @media screen and (max-width: 768px) {
     .winner-page{
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px 20px;
+        gap: 30px 0px;
+        padding: 0px 25px;
     }
     .winner-page img{
         width: 192px;
         height: 240px;
     }
-    .winner-page img:nth-of-type(1), .winner-page img:nth-of-type(2), {
-    margin-top: 20px;
-}
  }
