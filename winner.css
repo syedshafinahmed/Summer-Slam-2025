@@ -20,6 +20,7 @@
  @media screen and (max-width: 768px) {
     .winner-page{
         grid-template-columns: repeat(2, 1fr);
+        gap: 20px 20px;
     }
     .winner-page img{
         width: 192px;
